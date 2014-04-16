@@ -9,7 +9,7 @@ the omnipotent image editor
 
 Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageEditor mobile portal](https://github.com/koluray?tab=repositories)
 
-[Click here for **official documentation for ImageEditor-android**](https://github.com/Fotor/FotorSDK-android/wiki/InstalltionSDKGuide)
+[Click here for **official documentation for ImageEditor-android**](https://github.com/Fotor/FotorSDK-android/wiki/InstallationGuide)
 
 **omnipotent** means:
 
