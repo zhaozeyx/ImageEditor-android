@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_background_height"
+        android:background="@color/title_background"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/photo_editor"
+            android:textSize="@dimen/title_text_size" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@android:color/background_dark"
+        android:gravity="center"
+        android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/photo_editor_nophotos" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_background_height"
+        android:background="@color/title_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <Button
+            android:id="@+id/button_gallery"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/photo_editor_button_background"
+            android:text="@string/photo_editor_select_image"
+            android:textColor="@color/photo_editor_button_text_color"
+            android:textSize="@dimen/bottom_button_text_size" >
+        </Button>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#CC000000" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/photo_editor_button_background"
+            android:enabled="false"
+            android:text="@string/photo_editor_process"
+            android:textColor="@color/photo_editor_button_text_color"
+            android:textSize="@dimen/bottom_button_text_size" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

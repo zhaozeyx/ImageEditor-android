@@ -1,0 +1,67 @@
+<Frame name="Snowflake" type="Gallery" id="3">
+	<LeftTop>3M_0.png</LeftTop>
+	<Top>3M_1.png</Top>
+	<RightTop>3M_2.png</RightTop>
+	<Right>3M_3.png</Right>
+	<RightBottom>3M_4.png</RightBottom>
+	<Bottom>3M_5.png</Bottom>
+	<LeftBottom>3M_6.png</LeftBottom>
+	<Left>3M_7.png</Left>
+
+	<Unity>3M.png</Unity>
+	
+	<params>
+		<mode>M</mode>
+		<thickness>0.05</thickness>
+		<width>161</width>
+		<height>161</height>
+		<block type="leftTop">
+			<left>0</left>
+			<top>0</top>
+			<width>80</width>
+			<height>80</height>
+		</block>
+		<block type="top">
+			<left>80</left>
+			<top>0</top>
+			<width>1</width>
+			<height>80</height>
+		</block>
+		<block type="rightTop">
+			<left>81</left>
+			<top>0</top>
+			<width>80</width>
+			<height>80</height>
+		</block>
+		<block type="right">
+			<left>81</left>
+			<top>80</top>
+			<width>80</width>
+			<height>1</height>
+		</block>
+		<block type="rightBottom">
+			<left>81</left>
+			<top>81</top>
+			<width>80</width>
+			<height>80</height>
+		</block>
+		<block type="bottom">
+			<left>80</left>
+			<top>81</top>
+			<width>1</width>
+			<height>80</height>
+		</block>
+		<block type="leftBottom">
+			<left>0</left>
+			<top>81</top>
+			<width>80</width>
+			<height>80</height>
+		</block>
+		<block type="left">
+			<left>0</left>
+			<top>80</top>
+			<width>80</width>
+			<height>1</height>
+		</block>
+	</params>
+</Frame>

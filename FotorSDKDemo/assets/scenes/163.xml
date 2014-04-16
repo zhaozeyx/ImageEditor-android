@@ -1,0 +1,19 @@
+<Effect name="Landscape" type="Scenes" id="163">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(17, 0)(37, 18)(75, 52)(238, 255)</R>
+            <G>(16, 0)(53, 32)(113, 92)(236, 255)</G>
+            <B>(16, 0)(80, 57)(171, 164)(235, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

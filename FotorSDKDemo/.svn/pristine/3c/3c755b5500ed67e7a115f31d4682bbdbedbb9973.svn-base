@@ -1,0 +1,67 @@
+<Frame name="Blue Jeans" type="Gallery" id="10">
+	<LeftTop>10M_0.png</LeftTop>
+	<Top>10M_1.png</Top>
+	<RightTop>10M_2.png</RightTop>
+	<Right>10M_3.png</Right>
+	<RightBottom>10M_4.png</RightBottom>
+	<Bottom>10M_5.png</Bottom>
+	<LeftBottom>10M_6.png</LeftBottom>
+	<Left>10M_7.png</Left>
+
+	<Unity>10M.png</Unity>
+	
+	<params>
+		<mode>M</mode>
+		<thickness>0.08</thickness>
+		<width>174</width>
+		<height>174</height>
+		<block type="leftTop">
+			<left>0</left>
+			<top>0</top>
+			<width>72</width>
+			<height>72</height>
+		</block>
+		<block type="top">
+			<left>72</left>
+			<top>0</top>
+			<width>30</width>
+			<height>72</height>
+		</block>
+		<block type="rightTop">
+			<left>102</left>
+			<top>0</top>
+			<width>72</width>
+			<height>72</height>
+		</block>
+		<block type="right">
+			<left>102</left>
+			<top>72</top>
+			<width>72</width>
+			<height>30</height>
+		</block>
+		<block type="rightBottom">
+			<left>102</left>
+			<top>102</top>
+			<width>72</width>
+			<height>72</height>
+		</block>
+		<block type="bottom">
+			<left>72</left>
+			<top>102</top>
+			<width>30</width>
+			<height>72</height>
+		</block>
+		<block type="leftBottom">
+			<left>0</left>
+			<top>102</top>
+			<width>72</width>
+			<height>72</height>
+		</block>
+		<block type="left">
+			<left>0</left>
+			<top>72</top>
+			<width>72</width>
+			<height>30</height>
+		</block>
+	</params>
+</Frame>

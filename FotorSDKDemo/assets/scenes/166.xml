@@ -1,0 +1,19 @@
+<Effect name="Shade" type="Scenes" id="166">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(5, 8)(36, 51)(115, 145)(201, 220)(255, 255)</R>
+            <G>(6, 9)(67, 83)(169, 190)(255, 255)</G>
+            <B>(3, 3)(55, 60)(177, 190)(255, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

@@ -1,0 +1,19 @@
+<Effect name="Lomo-Fx" type="Lomo" id="102">
+	<Allocation name="tableTexture"/>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(33, 0)(104, 76)(167, 168)(218, 255)</R>
+            <G>(30, 0)(112, 71)(174, 189)(234, 255)</G>
+            <B>(8, 30)(160, 122)(233, 255)</B>
+        </params>
+    </BaseFilter>
+	
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

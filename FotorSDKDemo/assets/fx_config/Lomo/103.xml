@@ -1,0 +1,19 @@
+<Effect name="Nashville" type="Lomo" id="103">
+	<Allocation name="tableTexture"/>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(35, 43)(159, 194)(255, 255)</R>
+            <G>(0, 26)(141, 157)(255, 218)</G>
+            <B>(0, 81)(255, 145)</B>
+        </params>
+    </BaseFilter>
+	
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

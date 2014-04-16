@@ -1,0 +1,19 @@
+<Effect name="Night" type="Scenes" id="162">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 4)(39, 103)(134, 223)(242, 255)</R>
+            <G>(0, 3)(31, 85)(68, 155)(131, 255)(219, 255)</G>
+            <B>(0, 3)(42, 110)(114, 207)(255, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

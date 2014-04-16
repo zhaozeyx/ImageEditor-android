@@ -1,0 +1,67 @@
+<Frame name="2M" type="Simple" id="2">
+	<LeftTop>2M_0.png</LeftTop>
+	<Top>2M_1.png</Top>
+	<RightTop>2M_2.png</RightTop>
+	<Right>2M_3.png</Right>
+	<RightBottom>2M_4.png</RightBottom>
+	<Bottom>2M_5.png</Bottom>
+	<LeftBottom>2M_6.png</LeftBottom>
+	<Left>2M_7.png</Left>
+
+	<Unity>2M.png</Unity>
+	
+	<params>
+		<mode>M</mode>
+		<thickness>0.05</thickness>
+		<width>133</width>
+		<height>133</height>
+		<block type="leftTop">
+			<left>0</left>
+			<top>0</top>
+			<width>66</width>
+			<height>66</height>
+		</block>
+		<block type="top">
+			<left>66</left>
+			<top>0</top>
+			<width>1</width>
+			<height>66</height>
+		</block>
+		<block type="rightTop">
+			<left>67</left>
+			<top>0</top>
+			<width>66</width>
+			<height>66</height>
+		</block>
+		<block type="right">
+			<left>67</left>
+			<top>66</top>
+			<width>66</width>
+			<height>1</height>
+		</block>
+		<block type="rightBottom">
+			<left>67</left>
+			<top>67</top>
+			<width>66</width>
+			<height>66</height>
+		</block>
+		<block type="bottom">
+			<left>66</left>
+			<top>67</top>
+			<width>1</width>
+			<height>66</height>
+		</block>
+		<block type="leftBottom">
+			<left>0</left>
+			<top>67</top>
+			<width>66</width>
+			<height>66</height>
+		</block>
+		<block type="left">
+			<left>0</left>
+			<top>66</top>
+			<width>66</width>
+			<height>1</height>
+		</block>
+	</params>
+</Frame>

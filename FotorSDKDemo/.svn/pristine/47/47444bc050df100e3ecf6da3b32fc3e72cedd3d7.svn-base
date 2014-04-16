@@ -1,0 +1,35 @@
+<Effect name="Sepia" type="Retro" id="118">
+    <Allocation name="vignette"/>
+    <Allocation name="level"/>
+    
+    <BaseFilter name="Level">
+        <src>SRC</src>
+        <dst>level</dst>
+        <params>
+            <type>GetScale</type>
+            <dark>0.01</dark>
+            <light>0.2</light>
+            <saturation>0.0</saturation>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="Vignette">
+        <src>level</src>
+        <dst>TMP</dst>
+        <params>
+            <mode>linear</mode>
+            <vignetteStart>0.0</vignetteStart>
+            <vignetteRange>0.8</vignetteRange>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="MultiplyMatrixPlusBias">
+        <src>TMP</src>
+        <dst>DST</dst>
+        <params>
+            <vectorR>0.393, 0.769, 0.189</vectorR>
+            <vectorG>0.349, 0.686, 0.168</vectorG>
+            <vectorB>0.272, 0.534, 0.131</vectorB>
+        </params>
+    </BaseFilter>
+</Effect>

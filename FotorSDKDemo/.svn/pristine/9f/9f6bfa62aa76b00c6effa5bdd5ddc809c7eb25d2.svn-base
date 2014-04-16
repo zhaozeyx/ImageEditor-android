@@ -1,0 +1,7 @@
+<Frame name="43S" type="Styled" id="43">
+    <Unity>43S.png</Unity>
+    
+    <params>
+        <mode>S</mode>
+    </params>
+</Frame>

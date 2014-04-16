@@ -1,0 +1,19 @@
+<Effect name="Food" type="Scenes" id="160">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(3, 0)(23, 29)(83, 116)(167, 206)(255, 255)</R>
+            <G>(5, 0)(56, 64)(160, 189)(255, 255)</G>
+            <B>(3, 0)(48, 49)(142, 167)(248, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

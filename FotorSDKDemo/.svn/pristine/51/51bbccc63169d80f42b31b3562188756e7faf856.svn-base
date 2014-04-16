@@ -1,0 +1,19 @@
+<Effect name="Portrait" type="Scenes" id="173">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(9, 0)(49, 62)(124, 155)(218, 255)</R>
+            <G>(10, 0)(30, 33)(137, 169)(223, 255)</G>
+            <B>(10, 0)(37, 45)(96, 122)(150, 182)(221, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

@@ -1,0 +1,19 @@
+<Effect name="Lomo Life" type="Lomo" id="5">
+	<Allocation name="tableTexture"/>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 0)(117, 95)(155, 171)(179, 225)(255, 255)</R>
+            <G>(0, 0)(94, 66)(155, 176)(255, 255)</G>
+            <B>(0, 0)(48, 59)(141, 130)(255, 224)</B>
+        </params>
+    </BaseFilter>
+	
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

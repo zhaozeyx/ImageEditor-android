@@ -1,0 +1,67 @@
+<Frame name="23M" type="Simple" id="23">
+	<LeftTop>23M_0.png</LeftTop>
+	<Top>23M_1.png</Top>
+	<RightTop>23M_2.png</RightTop>
+	<Right>23M_3.png</Right>
+	<RightBottom>23M_4.png</RightBottom>
+	<Bottom>23M_5.png</Bottom>
+	<LeftBottom>23M_6.png</LeftBottom>
+	<Left>23M_7.png</Left>
+
+	<Unity>23M.png</Unity>
+	
+	<params>
+		<mode>M</mode>
+		<thickness>0.1</thickness>
+		<width>264</width>
+		<height>264</height>
+		<block type="leftTop">
+			<left>0</left>
+			<top>0</top>
+			<width>112</width>
+			<height>112</height>
+		</block>
+		<block type="top">
+			<left>112</left>
+			<top>0</top>
+			<width>40</width>
+			<height>112</height>
+		</block>
+		<block type="rightTop">
+			<left>152</left>
+			<top>0</top>
+			<width>112</width>
+			<height>112</height>
+		</block>
+		<block type="right">
+			<left>152</left>
+			<top>112</top>
+			<width>112</width>
+			<height>40</height>
+		</block>
+		<block type="rightBottom">
+			<left>152</left>
+			<top>152</top>
+			<width>112</width>
+			<height>112</height>
+		</block>
+		<block type="bottom">
+			<left>112</left>
+			<top>152</top>
+			<width>40</width>
+			<height>112</height>
+		</block>
+		<block type="leftBottom">
+			<left>0</left>
+			<top>152</top>
+			<width>112</width>
+			<height>112</height>
+		</block>
+		<block type="left">
+			<left>0</left>
+			<top>112</top>
+			<width>112</width>
+			<height>40</height>
+		</block>
+	</params>
+</Frame>

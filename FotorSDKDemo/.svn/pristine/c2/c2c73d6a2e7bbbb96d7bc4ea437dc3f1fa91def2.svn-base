@@ -1,0 +1,19 @@
+<Effect name="Backlit" type="Scenes" id="169">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 0)(69, 93)(126, 160)(210, 232)(255, 255)</R>
+            <G>(0, 0)(36, 47)(135, 169)(250, 254)</G>
+            <B>(0, 0)(28, 30)(107, 137)(147, 206)(255, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

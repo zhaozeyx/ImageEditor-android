@@ -1,0 +1,28 @@
+<Effect name="Toy" type="Old Picture" id="10">
+    <Allocation name="tableTexture"/>
+    
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <curveR>
+                <point>0, 4</point>
+                <point>255, 244</point>
+            </curveR>
+            <curveG>
+                <point>0, 0</point>
+                <point>255, 255</point>
+            </curveG>
+            <curveB>
+                <point>0, 84</point>
+                <point>255, 194</point>
+            </curveB>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

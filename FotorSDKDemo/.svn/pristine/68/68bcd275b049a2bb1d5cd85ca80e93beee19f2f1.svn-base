@@ -1,0 +1,49 @@
+<Effect name="Hot Fudge" type="Analog" id="78">
+	<Allocation name="tableTexture1"/>
+	<Allocation name="tableTexture2"/>
+	<Allocation name="dst_a"/>
+	<Allocation name="dst_b"/>
+	<Allocation name="specialAlphaTexture">
+		<file>vtg.png</file>
+	</Allocation>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture1</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(16, 25)(59, 77)(101, 143)(173, 211)(255, 237)</R>
+            <G>(24, 7)(85, 73)(124, 149)(185, 207)(249, 229)</G>
+            <B>(30, 7)(105, 78)(150, 148)(200, 193)(255, 204)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture2</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(16, 40)(52, 111)(124, 194)(172, 224)(231, 252)</R>
+            <G>(19, 5)(71, 84)(110, 145)(167, 212)(222, 250)</G>
+            <B>(21, 4)(67, 50)(143, 167)(237, 228)</B>
+        </params>
+    </BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<tableTexture>tableTexture1</tableTexture>
+		<dst>dst_a</dst>
+	</BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<tableTexture>tableTexture2</tableTexture>
+		<dst>dst_b</dst>
+	</BaseFilter>
+
+	<BaseFilter name="SpecialTrans">
+		<src>dst_a</src>
+		<dst>dst_b</dst>
+		<tex>specialAlphaTexture</tex>
+	</BaseFilter>
+
+	<Out DST="dst_b"/>
+</Effect>

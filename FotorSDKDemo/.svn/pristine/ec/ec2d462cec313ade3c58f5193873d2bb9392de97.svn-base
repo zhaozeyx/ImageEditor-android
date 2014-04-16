@@ -1,0 +1,27 @@
+<Effect name="Scratch" type="Scratch" id="114">
+    <Allocation name="level"/>
+    <Allocation name="texture">
+        <file>e114_t.png</file>
+    </Allocation>
+    
+    <BaseFilter name="Level">
+        <src>SRC</src>
+        <dst>level</dst>
+        <params>
+            <type>GetScale</type>
+            <dark>0.01</dark>
+            <light>0.2</light>
+            <saturation>1.0</saturation>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="LayerBlend">
+        <src>level</src>
+        <dst>DST</dst>
+        <tex>texture</tex>
+        <params>
+            <mode>exclusion</mode>
+            <opacity>0.51</opacity>
+        </params>
+    </BaseFilter>
+</Effect>

@@ -1,0 +1,53 @@
+{
+	"version": 1,
+	"category_name": "Classic",
+	"fonts_array": [{
+		"font_id": 1,
+		"font_name": "Droid Sans",
+		"font_normal": "DroidSans",
+		"font_bold": "DroidSans-Bold",
+		"font_italic": "",
+		"font_bolditalic": ""
+	},
+	{
+		"font_id": 2,
+		"font_name": "Droid Serif",
+		"font_normal": "DroidSerif",
+		"font_bold": "DroidSerif-Bold",
+		"font_italic": "DroidSerif-Italic",
+		"font_bolditalic": "DroidSerif-BoldItalic"
+	},
+	{
+		"font_id": 3,
+		"font_name": "Droid Sans Mono",
+		"font_normal": "DroidSansMono",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": ""
+	},
+	{
+		"font_id": 4,
+		"font_name": "Roboto Regular",
+		"font_normal": "Roboto-Regular",
+		"font_bold": "Roboto-Bold",
+		"font_italic": "Roboto-Italic",
+		"font_bolditalic": "Roboto-BoldItalic"
+	},
+	{
+		"font_id": 5,
+		"font_name": "Roboto Thin",
+		"font_normal": "Roboto-Thin",
+		"font_bold": "",
+		"font_italic": "Roboto-ThinItalic",
+		"font_bolditalic": ""
+	},
+	{
+		"font_id": 6,
+		"font_name": "Roboto Condensed",
+		"font_normal": "RobotoCondensed-Regular",
+		"font_bold": "RobotoCondensed-Bold",
+		"font_italic": "RobotoCondensed-Italic",
+		"font_bolditalic": "RobotoCondensed-BoldItalic"
+	}
+	]
+}

@@ -1,0 +1,109 @@
+{
+	"version": 1,
+	"category_name": "Charm",
+	"fonts_array": [{
+		"font_id": 1,
+		"font_name": "Sofia",
+		"font_normal": "Sofia",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": "Sofia"
+	},
+	{
+		"font_id": 2,
+		"font_name": "Ostrich Sans",
+		"font_normal": "Ostrich Sans",
+		"font_bold": "OstrichSans-Bold",
+		"font_italic": "",
+		"font_bolditalic": "OstrichSans-Bold"
+	},
+	{
+		"font_id": 3,
+		"font_name": "Bearpaw",
+		"font_normal": "Bearpaw",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": "Bearpaw"
+	},
+	{
+		"font_id": 4,
+		"font_name": "American Typewriter",
+		"font_normal": "AmericanTypewriter",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": "AmericanTypewriter-Bold"
+	},
+	{
+		"font_id": 5,
+		"font_name": "Stencil Std",
+		"font_normal": "Stencil Std",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": "Stencil Std"
+	},
+	{
+		"font_id": 6,
+		"font_name": "Brush Script MT",
+		"font_normal": "Brush Script",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": "Brush Script"
+	},
+	{
+		"font_id": 7,
+		"font_name": "Noteworthy",
+		"font_normal": "Noteworthy",
+		"font_bold": "Noteworthy-Bold",
+		"font_italic": "",
+		"font_bolditalic": "Noteworthy-Bold"
+	},
+	{
+		"font_id": 8,
+		"font_name": "Miama",
+		"font_normal": "Miama",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": "Miama"
+	},
+	{
+		"font_id": 9,
+		"font_name": "Blackout",
+		"font_normal": "Blackout",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": "Blackout"
+	},
+	{
+		"font_id": 10,
+		"font_name": "Muli",
+		"font_normal": "Muli",
+		"font_bold": "",
+		"font_italic": "Muli-Italic",
+		"font_bolditalic": "Muli-Italic"
+	},
+	{
+		"font_id": 11,
+		"font_name": "padaloma italic",
+		"font_normal": "padaloma",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": "padaloma"
+	},
+	{
+		"font_id": 12,
+		"font_name": "Josefin Sans",
+		"font_normal": "Josefin Sans",
+		"font_bold": "JosefinSans-Bold",
+		"font_italic": "JosefinSans-Italic",
+		"font_bolditalic": "JosefinSans-BoldItalic"
+	},
+	{
+		"font_id": 13,
+		"font_name": "Garogier",
+		"font_normal": "Garogier",
+		"font_bold": "",
+		"font_italic": "",
+		"font_bolditalic": "Garogier"
+	}
+	]
+}

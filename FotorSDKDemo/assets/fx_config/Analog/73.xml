@@ -1,0 +1,49 @@
+<Effect name="Mini-Oven" type="Analog" id="73">
+	<Allocation name="tableTexture1"/>
+	<Allocation name="tableTexture2"/>
+	<Allocation name="dst_a"/>
+	<Allocation name="dst_b"/>
+	<Allocation name="specialAlphaTexture">
+		<file>vtg.png</file>
+	</Allocation>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture1</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(16, 0)(138, 133)(202, 185)(255, 213)</R>
+            <G>(82, 0)(128, 85)(173, 145)(255, 207)</G>
+            <B>(108, 62)(176, 137)(255, 184)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture2</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 105)(61, 167)(128, 221)(190, 236)(255, 255)</R>
+            <G>(3, 0)(64, 98)(130, 191)(191, 228)(255, 255)</G>
+            <B>(54, 62)(86, 101)(129, 155)(191, 192)(255, 222)</B>
+        </params>
+    </BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<tableTexture>tableTexture1</tableTexture>
+		<dst>dst_a</dst>
+	</BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<tableTexture>tableTexture2</tableTexture>
+		<dst>dst_b</dst>
+	</BaseFilter>
+
+	<BaseFilter name="SpecialTrans">
+		<src>dst_a</src>
+		<dst>dst_b</dst>
+		<tex>specialAlphaTexture</tex>
+	</BaseFilter>
+
+	<Out DST="dst_b"/>
+</Effect>

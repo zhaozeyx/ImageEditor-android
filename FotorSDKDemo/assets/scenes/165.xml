@@ -1,0 +1,19 @@
+<Effect name="Fluorescent" type="Scenes" id="165">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(4, 4)(38, 38)(146, 146)(201, 202)(255, 255)</R>
+            <G>(0, 0)(80, 74)(192, 187)(255, 255)</G>
+            <B>(0, 0)(58, 58)(183, 184)(255, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

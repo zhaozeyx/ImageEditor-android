@@ -1,0 +1,41 @@
+<Effect name="DeepBlue" type="Vintage" id="110">
+    <Allocation name="level"/>
+    <Allocation name="tableTexture"/>
+    
+    <BaseFilter name="Level">
+        <src>SRC</src>
+        <dst>level</dst>
+        <params>
+            <type>GetScale</type>
+            <dark>0.01</dark>
+            <light>0.01</light>
+            <saturation>1.3</saturation>
+        </params>
+    </BaseFilter>
+    
+   <BaseFilter name="Vignette">
+        <src>level</src>
+        <dst>TMP</dst>
+        <params>
+            <mode>quadric</mode>
+            <vignetteStart>0.0</vignetteStart>
+            <vignetteRange>0.8</vignetteRange>
+        </params>
+    </BaseFilter>
+    
+   <BaseFilter name="Curve">
+       <tableTexture>tableTexture</tableTexture>
+       <params>
+           <mode>texturing</mode>
+           <R>(20, 0)(150, 109)(255, 255)</R>
+           <G>(30, 0)(97, 92)(163, 172)(255, 255)</G>
+           <B>(0, 0)(240, 255)</B>
+       </params>
+   </BaseFilter>
+    
+    <BaseFilter name="TableTexture">
+        <src>TMP</src>
+        <dst>DST</dst>
+        <tableTexture>tableTexture</tableTexture>
+    </BaseFilter>
+</Effect>

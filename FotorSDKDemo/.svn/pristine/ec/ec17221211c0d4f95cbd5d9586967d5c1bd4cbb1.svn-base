@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fotorsdkdemo"
+    android:versionCode="1"
+    android:versionName="1.0.4" >
+
+    <!-- FotorSDK Required : Minimum sdk version -->
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+    <!-- FotorSDK Required : Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.fotorsdkdemo.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FotorSDK Required : proccess main activity -->
+        <activity
+            android:name="com.everimaging.fotorsdk.FotorSDKActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:largeHeap="true"
+            android:screenOrientation="unspecified"
+            android:theme="@style/FotorTheme" />
+        <!-- FotorSDK Required : camera main activity -->
+        <activity android:name="com.everimaging.fotorsdk.camera.CameraActivity" >
+        </activity>
+        <!-- FotorSDK Required : content provider for process high resolution  #NOTE# authorities value you must change to like this:
+        	 android:authorities="{your.packagename}.FotorContentProvider -->
+        <provider
+            android:name="com.everimaging.fotorsdk.provider.FotorContentProvider"
+            android:authorities="com.example.fotorsdkdemo.FotorContentProvider"
+            android:exported="false" />
+
+        <!-- FotorSDK Required : receiver to listener newly feature package change -->
+        <receiver
+            android:name="com.everimaging.fotorsdk.receivers.FotorSystemReceiver"
+            android:exported="true"
+            android:process=":fotor_receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- FotorSDK Required : You Fotor API_KEY -->
+        <meta-data
+            android:name="FOTOR_API_KEY"
+            android:value="fotor_api_key" />
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<Frame name="38M" type="Simple" id="38">
+	<LeftTop>38M_0.png</LeftTop>
+	<Top>38M_1.png</Top>
+	<RightTop>38M_2.png</RightTop>
+	<Right>38M_3.png</Right>
+	<RightBottom>38M_4.png</RightBottom>
+	<Bottom>38M_5.png</Bottom>
+	<LeftBottom>38M_6.png</LeftBottom>
+	<Left>38M_7.png</Left>
+
+	<Unity>38M.png</Unity>
+	
+	<params>
+		<mode>M</mode>
+		<thickness>0.5</thickness>
+		<width>728</width>
+		<height>728</height>
+		<block type="leftTop">
+			<left>0</left>
+			<top>0</top>
+			<width>360</width>
+			<height>360</height>
+		</block>
+		<block type="top">
+			<left>360</left>
+			<top>0</top>
+			<width>8</width>
+			<height>360</height>
+		</block>
+		<block type="rightTop">
+			<left>368</left>
+			<top>0</top>
+			<width>360</width>
+			<height>360</height>
+		</block>
+		<block type="right">
+			<left>368</left>
+			<top>360</top>
+			<width>360</width>
+			<height>8</height>
+		</block>
+		<block type="rightBottom">
+			<left>368</left>
+			<top>368</top>
+			<width>360</width>
+			<height>360</height>
+		</block>
+		<block type="bottom">
+			<left>360</left>
+			<top>368</top>
+			<width>8</width>
+			<height>360</height>
+		</block>
+		<block type="leftBottom">
+			<left>0</left>
+			<top>368</top>
+			<width>360</width>
+			<height>360</height>
+		</block>
+		<block type="left">
+			<left>0</left>
+			<top>360</top>
+			<width>360</width>
+			<height>8</height>
+		</block>
+	</params>
+</Frame>

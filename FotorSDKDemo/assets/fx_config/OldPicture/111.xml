@@ -1,0 +1,12 @@
+<Effect name="Grayscale" type="BorW" id="111">
+    <BaseFilter name="Level">
+        <src>SRC</src>
+        <dst>DST</dst>
+        <params>
+            <type>GetScale</type>
+            <dark>0.01</dark>
+            <light>0.01</light>
+            <saturation>0.0</saturation>
+        </params>
+    </BaseFilter>
+</Effect>

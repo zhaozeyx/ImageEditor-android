@@ -1,0 +1,19 @@
+<Effect name="Cloudy" type="Scenes" id="167">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(14, 0)(51, 42)(135, 138)(191, 202)(234, 255)</R>
+            <G>(11, 6)(78, 77)(178, 185)(242, 250)</G>
+            <B>(11, 0)(22, 10)(72, 60)(171, 162)(217, 209)(255, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

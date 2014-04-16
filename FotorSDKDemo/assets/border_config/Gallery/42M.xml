@@ -1,0 +1,67 @@
+<Frame name="Cleopatra" type="Gallery" id="42">
+	<LeftTop>42M_0.png</LeftTop>
+	<Top>42M_1.png</Top>
+	<RightTop>42M_2.png</RightTop>
+	<Right>42M_3.png</Right>
+	<RightBottom>42M_4.png</RightBottom>
+	<Bottom>42M_5.png</Bottom>
+	<LeftBottom>42M_6.png</LeftBottom>
+	<Left>42M_7.png</Left>
+
+	<Unity>42M.png</Unity>
+	
+	<params>
+		<mode>M</mode>
+		<thickness>0.1</thickness>
+		<width>362</width>
+		<height>362</height>
+		<block type="leftTop">
+			<left>0</left>
+			<top>0</top>
+			<width>166</width>
+			<height>166</height>
+		</block>
+		<block type="top">
+			<left>166</left>
+			<top>0</top>
+			<width>30</width>
+			<height>166</height>
+		</block>
+		<block type="rightTop">
+			<left>196</left>
+			<top>0</top>
+			<width>166</width>
+			<height>166</height>
+		</block>
+		<block type="right">
+			<left>196</left>
+			<top>166</top>
+			<width>166</width>
+			<height>30</height>
+		</block>
+		<block type="rightBottom">
+			<left>196</left>
+			<top>196</top>
+			<width>166</width>
+			<height>166</height>
+		</block>
+		<block type="bottom">
+			<left>166</left>
+			<top>196</top>
+			<width>30</width>
+			<height>166</height>
+		</block>
+		<block type="leftBottom">
+			<left>0</left>
+			<top>196</top>
+			<width>166</width>
+			<height>166</height>
+		</block>
+		<block type="left">
+			<left>0</left>
+			<top>166</top>
+			<width>166</width>
+			<height>30</height>
+		</block>
+	</params>
+</Frame>

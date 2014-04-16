@@ -1,0 +1,41 @@
+<Effect name="Walden" type="Lomo" id="2">
+	<Allocation name="level"/>
+	<Allocation name="tableTexture"/>
+
+	<BaseFilter name="Level">
+		<src>SRC</src>
+		<dst>level</dst>
+		<params>
+			<type>GetScale</type>
+			<dark>0.1</dark>
+			<light>0.2</light>
+			<saturation>1.0</saturation>
+		</params>
+	</BaseFilter>
+	
+	<BaseFilter name="Vignette">
+		<src>level</src>
+		<dst>TMP</dst>
+		<params>
+		    <mode>quadric</mode>
+			<vignetteStart>0.0</vignetteStart>
+			<vignetteRange>1.0</vignetteRange>
+		</params>
+	</BaseFilter>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 0)(127, 91)(255, 214)</R>
+            <G>(0, 0)(127, 102)(255, 255)</G>
+            <B>(0, 0)(127, 108)(255, 255)</B>
+        </params>
+    </BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>TMP</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

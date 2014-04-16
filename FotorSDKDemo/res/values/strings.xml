@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FotorSDKDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="photo_editor">Photo Editor</string>
+    <string name="photo_editor_select_image">Select an image</string>
+    <string name="photo_editor_process">Edit sample image</string>
+
+</resources>

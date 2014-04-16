@@ -1,0 +1,24 @@
+<Effect name="BandW" type="B/W" id="112">
+    <Allocation name="level"/>
+    
+    <BaseFilter name="Level">
+        <src>SRC</src>
+        <dst>level</dst>
+        <params>
+            <type>GetScale</type>
+            <dark>0.01</dark>
+            <light>0.2</light>
+            <saturation>0.0</saturation>
+        </params>
+    </BaseFilter>
+    
+     <BaseFilter name="Vignette">
+        <src>level</src>
+        <dst>DST</dst>
+        <params>
+            <mode>quadric</mode>
+            <vignetteStart>0.0</vignetteStart>
+            <vignetteRange>1.0</vignetteRange>
+        </params>
+    </BaseFilter>
+</Effect>

@@ -1,0 +1,19 @@
+<Effect name="X-ProII" type="Lomo" id="10">
+	<Allocation name="tableTexture"/>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 4)(255, 244)</R>
+            <G>(0, 0)(255, 255)</G>
+            <B>(0, 84)(255, 194)</B>
+        </params>
+    </BaseFilter>
+	
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

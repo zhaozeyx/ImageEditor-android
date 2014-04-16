@@ -1,0 +1,19 @@
+<Effect name="Sand/Snow" type="Scenes" id="161">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(15, 0)(45, 37)(92, 103)(230, 255)</R>
+            <G>(19, 0)(34, 22)(138, 158)(228, 252)</G>
+            <B>(19, 0)(74, 63)(159, 166)(230, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

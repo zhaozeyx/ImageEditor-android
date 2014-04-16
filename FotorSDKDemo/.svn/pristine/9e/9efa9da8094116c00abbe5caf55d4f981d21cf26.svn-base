@@ -1,0 +1,49 @@
+<Effect name="Pale-Ocre" type="Retro" id="16">
+    <Allocation name="level"/>
+    <Allocation name="saturation"/>
+    <Allocation name="hue"/>
+    
+    <BaseFilter name="Level">
+        <src>SRC</src>
+        <dst>level</dst>
+        <params>
+            <type>GetScale</type>
+            <dark>0.01</dark>
+            <light>0.01</light>
+            <saturation>1.0</saturation>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="HSVSaturation">
+        <src>level</src>
+        <dst>saturation</dst>
+        <params>
+         	<red>0.1</red>
+			<yellow>-0.7</yellow>
+			<green>-0.7</green>
+			<cyan>-0.7</cyan>
+			<blue>-0.7</blue>
+			<magenta>0.1</magenta>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="HSLAdjustment">
+       	<src>level</src>
+        <dst>hue</dst>
+        <params>
+            <mode>hue</mode>
+            <hue>0.829</hue>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="LayerBlend">
+        <src>saturation</src>
+        <tex>hue</tex>
+        <dst>DST</dst>
+        <params>
+            <mode>normal</mode>
+            <opacity>0.31</opacity>
+        </params>
+    </BaseFilter>
+    
+</Effect>

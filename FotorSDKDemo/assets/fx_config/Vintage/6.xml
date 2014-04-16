@@ -1,0 +1,19 @@
+<Effect name="Sunset" type="Vintage" id="6">
+    <Allocation name="tableTexture"/>
+    
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 0)(69, 63)(105, 138)(151, 222)(255, 255)</R>
+            <G>(0, 0)(67, 51)(135, 191)(255, 255)</G>
+            <B>(0, 0)(86, 76)(150, 212)(255, 255)</B>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="TableTexture">
+        <src>SRC</src>
+        <dst>DST</dst>
+        <tableTexture>tableTexture</tableTexture>
+    </BaseFilter>
+</Effect>

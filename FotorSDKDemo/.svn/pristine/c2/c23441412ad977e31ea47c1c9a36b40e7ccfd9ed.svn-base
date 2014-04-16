@@ -1,0 +1,14 @@
+<Effect name="Straight Ink" type="Analog" id="27">
+	<BaseFilter name="HSVSaturation">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<params>
+			<red>-1.0</red>
+			<yellow>-1.0</yellow>
+			<green>-1.0</green>
+			<cyan>-1.0</cyan>
+			<blue>-1.0</blue>
+			<magenta>-1.0</magenta>
+		</params>
+	</BaseFilter>
+</Effect>

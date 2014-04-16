@@ -1,0 +1,19 @@
+<Effect name="Warm Yellow" type="Lomo" id="7">
+	<Allocation name="tableTexture"/>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 0)(43, 77)(56, 104)(100, 166)(255, 255)</R>
+            <G>(0, 0)(35, 53)(255, 255)</G>
+            <B>(0, 0)(110, 123)(255, 212)</B>
+        </params>
+    </BaseFilter>
+	
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

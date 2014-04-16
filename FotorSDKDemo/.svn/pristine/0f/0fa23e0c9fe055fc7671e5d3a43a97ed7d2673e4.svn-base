@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title_background">#E5414850</color>
+    <color name="bottom_button_text_default_color">#B3C2D6</color>
+    <color name="bottom_button_text_pressed_color">#00C0FF</color>
+    <color name="bottom_button_text_disable_color">#EEB3C2D6</color>
+    <color name="bottom_button_background_default_color">#E5414850</color>
+    <color name="bottom_button_background_pressed_color">#991C1F27</color>
+    <color name="bottom_button_background_disable_color">#CC414850</color>
+
+</resources>

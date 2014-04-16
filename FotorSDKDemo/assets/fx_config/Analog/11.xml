@@ -1,0 +1,19 @@
+<Effect name="Pittsburgh" type="Analog" id="11">
+	<Allocation name="tableTexture"/>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(48, 56)(82, 129)(130, 206)(214, 255)</R>
+            <G>(7, 37)(64, 111)(140, 190)(232, 220)</G>
+            <B>(2, 97)(114, 153)(229, 172)</B>
+        </params>
+    </BaseFilter>
+	
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

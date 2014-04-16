@@ -1,0 +1,35 @@
+<Effect name="Hippie" type="Old Picture" id="6">
+    <Allocation name="tableTexture"/>
+    
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <curveR>
+                <point>0, 0</point>
+                <point>69, 63</point>
+                <point>105, 138</point>
+                <point>151, 222</point>
+                <point>255, 255</point>
+            </curveR>
+            <curveG>
+                <point>0, 0</point>
+                <point>67, 51</point>
+                <point>135, 191</point>
+                <point>255, 255</point>
+            </curveG>
+            <curveB>
+                <point>0, 0</point>
+                <point>86, 76</point>
+                <point>150, 212</point>
+                <point>255, 255</point>
+            </curveB>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

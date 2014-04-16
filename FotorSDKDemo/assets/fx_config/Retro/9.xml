@@ -1,0 +1,19 @@
+<Effect name="WarmGreen" type="Retro" id="9">
+    <Allocation name="tableTexture"/>
+    
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(15, 0)(92, 133)(255, 234)</R>
+            <G>(0, 20)(105, 128)(255, 255)</G>
+            <B>(0, 0)(120, 132)(255, 214)</B>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

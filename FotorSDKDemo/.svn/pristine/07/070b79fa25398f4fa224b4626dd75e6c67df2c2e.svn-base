@@ -1,0 +1,41 @@
+<Effect name="Blue Sepia" type="Lomo" id="4">
+	<Allocation name="level"/>
+	<Allocation name="tableTexture"/>
+
+	<BaseFilter name="Level">
+		<src>SRC</src>
+		<dst>level</dst>
+		<params>
+			<type>GetScale</type>
+			<dark>0.1</dark>
+			<light>0.1</light>
+			<saturation>0.3</saturation>
+		</params>
+	</BaseFilter>
+	
+	<BaseFilter name="Vignette">
+		<src>level</src>
+		<dst>TMP</dst>
+		<params>
+		    <mode>quadric</mode>
+			<vignetteStart>0.0</vignetteStart>
+			<vignetteRange>1.0</vignetteRange>
+		</params>
+	</BaseFilter>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 14)(63, 66)(129, 151)(208, 255)</R>
+            <G>(0, 38)(63, 72)(127, 127)(196, 255)</G>
+            <B>(0, 49)(63, 75)(127, 121)(202, 233)(255, 255)</B>
+        </params>
+    </BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>TMP</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

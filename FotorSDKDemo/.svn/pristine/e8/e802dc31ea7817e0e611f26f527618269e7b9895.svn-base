@@ -1,0 +1,21 @@
+<Effect name="Sunset" type="Scenes" id="164">
+    <Allocation name="tableTexture">
+		<file>e164_c1.jpg</file>
+	</Allocation>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(33, 0)(70, 32)(146, 143)(185, 204)(255, 255)</R>
+            <G>(22, 0)(103, 71)(189, 219)(255, 252)</G>
+            <B>(10, 0)(54, 29)(93, 66)(205, 220)(255, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

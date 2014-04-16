@@ -1,0 +1,67 @@
+<Frame name="Nile River" type="Gallery" id="41">
+	<LeftTop>41M_0.png</LeftTop>
+	<Top>41M_1.png</Top>
+	<RightTop>41M_2.png</RightTop>
+	<Right>41M_3.png</Right>
+	<RightBottom>41M_4.png</RightBottom>
+	<Bottom>41M_5.png</Bottom>
+	<LeftBottom>41M_6.png</LeftBottom>
+	<Left>41M_7.png</Left>
+
+	<Unity>41M.png</Unity>
+	
+	<params>
+		<mode>M</mode>
+		<thickness>0.05</thickness>
+		<width>170</width>
+		<height>170</height>
+		<block type="leftTop">
+			<left>0</left>
+			<top>0</top>
+			<width>70</width>
+			<height>70</height>
+		</block>
+		<block type="top">
+			<left>70</left>
+			<top>0</top>
+			<width>30</width>
+			<height>70</height>
+		</block>
+		<block type="rightTop">
+			<left>100</left>
+			<top>0</top>
+			<width>70</width>
+			<height>70</height>
+		</block>
+		<block type="right">
+			<left>100</left>
+			<top>70</top>
+			<width>70</width>
+			<height>30</height>
+		</block>
+		<block type="rightBottom">
+			<left>100</left>
+			<top>100</top>
+			<width>70</width>
+			<height>70</height>
+		</block>
+		<block type="bottom">
+			<left>70</left>
+			<top>100</top>
+			<width>30</width>
+			<height>70</height>
+		</block>
+		<block type="leftBottom">
+			<left>0</left>
+			<top>100</top>
+			<width>70</width>
+			<height>70</height>
+		</block>
+		<block type="left">
+			<left>0</left>
+			<top>70</top>
+			<width>70</width>
+			<height>30</height>
+		</block>
+	</params>
+</Frame>

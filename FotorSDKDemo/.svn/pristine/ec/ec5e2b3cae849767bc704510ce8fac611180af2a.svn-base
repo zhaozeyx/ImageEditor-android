@@ -1,0 +1,21 @@
+<Effect name="Flash" type="Scenes" id="170">
+    <Allocation name="tableTexture">
+		<file>e170_c1.jpg</file>
+	</Allocation>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(2, 2)(16, 30)(72, 112)(135, 185)(252, 255)</R>
+            <G>(2, 1)(30, 42)(55, 84)(157, 207)(238, 249)</G>
+            <B>(1, 0)(26, 17)(67, 106)(114, 165)(231, 250)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

@@ -1,0 +1,22 @@
+<Effect name="GlowGrayscale" type="B/W" id="28">
+    <BaseFilter name="Level">
+        <src>SRC</src>
+        <dst>TMP</dst>
+        <params>
+            <type>GetScale</type>
+            <dark>0.01</dark>
+            <light>0.15</light>
+            <saturation>0.0</saturation>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="Vignette">
+        <src>TMP</src>
+        <dst>DST</dst>
+      	<params>
+      	    <mode>quadric</mode>
+      	    <vignetteStart>0.0</vignetteStart>
+      	    <vignetteRange>0.8</vignetteRange>
+      	</params>
+    </BaseFilter>
+</Effect>

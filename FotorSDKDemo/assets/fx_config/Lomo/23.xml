@@ -1,0 +1,33 @@
+<Effect name="Earlybird" type="Lomo" id="23">
+	<Allocation name="tableTexture"/>
+	<Allocation name="dst"/>
+
+	<BaseFilter name="HSVSaturation">
+		<src>SRC</src>
+		<dst>dst</dst>
+		<params>
+			<red>-0.5</red>
+			<yellow>-0.5</yellow>
+			<green>-0.5</green>
+			<cyan>-0.5</cyan>
+			<blue>-0.5</blue>
+			<magenta>-0.5</magenta>
+		</params>
+	</BaseFilter>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(0, 0)(129, 148)(255, 255)</R>
+            <G>(0, 0)(92, 77)(175, 189)(255, 255)</G>
+            <B>(0, 0)(163, 144)(255, 255)</B>
+        </params>
+    </BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>dst</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

@@ -1,0 +1,29 @@
+<Effect name="GreenGlow" type="Vintage" id="93">
+    <Allocation name="tableTexture"/>
+    
+    <BaseFilter name="Vignette">
+        <src>SRC</src>
+        <dst>TMP</dst>
+        <params>
+            <mode>quadric</mode>
+            <vignetteStart>0.0</vignetteStart>
+            <vignetteRange>0.9</vignetteRange>
+        </params>
+    </BaseFilter>
+    
+    <BaseFilter name="Curve">
+       <tableTexture>tableTexture</tableTexture>
+       <params>
+           <mode>texturing</mode>
+           <R>(0, 0)(89, 44)(179, 189)(222, 255)</R>
+           <G>(0, 0)(64, 64)(185, 212)(255, 255)</G>
+           <B>(0, 23)(255, 217)</B>
+       </params>
+   </BaseFilter>
+    
+    <BaseFilter name="TableTexture">
+        <src>TMP</src>
+        <dst>DST</dst>
+        <tableTexture>tableTexture</tableTexture>
+    </BaseFilter>
+</Effect>

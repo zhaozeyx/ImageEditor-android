@@ -1,0 +1,49 @@
+<Effect name="Red Wash"  type="Analog" id="80">
+	<Allocation name="tableTexture1"/>
+	<Allocation name="tableTexture2"/>
+	<Allocation name="dst_a"/>
+	<Allocation name="dst_b"/>
+	<Allocation name="specialAlphaTexture">
+		<file>vtg.png</file>
+	</Allocation>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture1</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(22, 0)(120, 78)(208, 138)(255, 170)</R>
+            <G>(77, 0)(143, 69)(255, 176)</G>
+            <B>(45, 0)(159, 97)(255, 173)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture2</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(7, 171)(92, 201)(255, 253)</R>
+            <G>(0, 3)(61, 79)(110, 142)(186, 201)(255, 255)</G>
+            <B>(0, 23)(53, 87)(103, 140)(186, 208)(239, 248)</B>
+        </params>
+    </BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<tableTexture>tableTexture1</tableTexture>
+		<dst>dst_a</dst>
+	</BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<tableTexture>tableTexture2</tableTexture>
+		<dst>dst_b</dst>
+	</BaseFilter>
+
+	<BaseFilter name="SpecialTrans">
+		<src>dst_a</src>
+		<dst>dst_b</dst>
+		<tex>specialAlphaTexture</tex>
+	</BaseFilter>
+
+	<Out DST="dst_b"/>
+</Effect>

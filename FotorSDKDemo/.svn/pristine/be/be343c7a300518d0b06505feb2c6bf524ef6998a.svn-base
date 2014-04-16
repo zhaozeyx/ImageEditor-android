@@ -1,0 +1,19 @@
+<Effect name="Darken" type="Scenes" id="168">
+    <Allocation name="tableTexture"/>
+	
+    <BaseFilter name="Curve">
+        <tableTexture>tableTexture</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(9, 0)(26, 7)(155, 108)(194, 159)(255, 253)</R>
+            <G>(9, 0)(50, 19)(218, 194)(255, 255)</G>
+            <B>(0, 0)(29, 9)(162, 116)(218, 194)(255, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture</tableTexture>
+	</BaseFilter>
+</Effect>

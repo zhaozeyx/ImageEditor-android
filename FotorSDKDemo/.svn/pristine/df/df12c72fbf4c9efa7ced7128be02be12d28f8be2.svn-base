@@ -1,0 +1,7 @@
+<Frame name="Instant" type="Gallery" id="118">
+    <Unity>118S.png</Unity>
+    
+    <params>
+        <mode>S</mode>
+    </params>
+</Frame>

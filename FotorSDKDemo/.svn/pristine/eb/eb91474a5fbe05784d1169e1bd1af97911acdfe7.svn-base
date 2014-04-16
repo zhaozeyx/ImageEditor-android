@@ -1,0 +1,35 @@
+<Effect name="Theatre" type="Scenes" id="171">
+    <Allocation name="tableTexture1"/>
+	<Allocation name="tableTexture2"/>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture1</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(16, 0)(60, 45)(124, 124)(214, 255)</R>
+            <G>(18, 2)(91, 81)(156, 169)(213, 255)</G>
+            <B>(16, 0)(85, 74)(158, 171)(211, 255)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture2</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(17, 0)(144, 150)(214, 255)</R>
+            <G>(16, 0)(61, 47)(160, 172)(215, 255)</G>
+            <B>(21, 2)(131, 135)(213, 255)</B>
+        </params>
+    </BaseFilter>
+	
+	<BaseFilter name="TableTexture">
+		<src>SRC</src>
+		<dst>TMP</dst>
+		<tableTexture>tableTexture1</tableTexture>
+	</BaseFilter>
+	<BaseFilter name="TableTexture">
+		<src>TMP</src>
+		<dst>DST</dst>
+		<tableTexture>tableTexture2</tableTexture>
+	</BaseFilter>
+</Effect>

@@ -1,0 +1,63 @@
+<Effect name="Dawn Light" type="Analog" id="74">
+	<Allocation name="tmp"/>
+	<Allocation name="tableTexture1"/>
+	<Allocation name="tableTexture2"/>
+	<Allocation name="dst_a"/>
+	<Allocation name="dst_b"/>
+	<Allocation name="specialAlphaTexture">
+		<file>vtg.png</file>
+	</Allocation>
+
+	<BaseFilter name="HSVSaturation">
+		<src>SRC</src>
+		<dst>tmp</dst>
+		<params>
+			<red>-0.45</red>
+			<yellow>-0.45</yellow>
+			<green>-0.45</green>
+			<cyan>-0.45</cyan>
+			<blue>-0.45</blue>
+			<magenta>-0.45</magenta>
+		</params>
+	</BaseFilter>
+	
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture1</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(63, 35)(148, 116)(255, 208)</R>
+            <G>(71, 0)(149, 84)(255, 187)</G>
+            <B>(85, 22)(177, 87)(255, 148)</B>
+        </params>
+    </BaseFilter>
+    
+	<BaseFilter name="Curve">
+        <tableTexture>tableTexture2</tableTexture>
+        <params>
+            <mode>texturing</mode>
+            <R>(5, 42)(78, 129)(117, 178)(182, 219)(252, 253)</R>
+            <G>(0, 0)(63, 84)(117, 157)(173, 204)(255, 241)</G>
+            <B>(8, 26)(130, 147)(190, 197)(255, 217)</B>
+        </params>
+    </BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>tmp</src>
+		<dst>dst_a</dst>
+		<tableTexture>tableTexture1</tableTexture>
+	</BaseFilter>
+
+	<BaseFilter name="TableTexture">
+		<src>tmp</src>
+		<dst>dst_b</dst>
+		<tableTexture>tableTexture2</tableTexture>
+	</BaseFilter>
+
+	<BaseFilter name="SpecialTrans">
+		<src>dst_a</src>
+		<dst>dst_b</dst>
+		<tex>specialAlphaTexture</tex>
+	</BaseFilter>
+
+	<Out DST="dst_b"/>
+</Effect>
