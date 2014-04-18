@@ -5,7 +5,7 @@ the omnipotent image editor
 
 **[ImageEditor](https://github.com/koluray/ImageEditor-android.git)** is an omnipotent image editor which is based on [FotorSDK](https://github.com/Fotor).
 
-![sample](demo.jpg)
+![sample](https://raw.githubusercontent.com/jhondge/Everimaging-android-res/master/fotorsdk/images/FotorSDK_Android.jpg)
 
 Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageEditor mobile portal](https://github.com/koluray?tab=repositories)
 
@@ -43,7 +43,7 @@ Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageE
 
 ## Credits ##
 
-**Design, coding:** [John](https://github.com/jhondge) 
+**Design, coding:** [John](https://github.com/jhondge) , [ExenVitor](https://github.com/ExenVitor)
  
 ## License ##
 
